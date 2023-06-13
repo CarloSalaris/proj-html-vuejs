@@ -15,7 +15,7 @@ export default {
         <div class="block">
             <!-- LOGO -->
             <div class="logo">
-                <img src="../assets/images/icons/logo.png" alt="logo">
+                <a href="#"><img src="../assets/images/icons/logo.png" alt="logo"></a>
             </div>
             <!-- NAV MENU (ul) -->
             <ul>
