@@ -9,8 +9,13 @@
 
 body {
     font-family: 'Jost', sans-serif;
-    font-size: 22px;
+    font-size: 24px;
     color: $darkBlue;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
 }
 
 img {
@@ -44,4 +49,10 @@ button {
 
 .active {
     border-bottom: solid 1px #ffffff;
+}
+
+.container_centered {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px;
 }

@@ -47,8 +47,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../styles/partials/variables' as *;
-
 .navContainer {
     padding: 30px 0;
     display: flex;
