@@ -27,7 +27,7 @@ export default {
 
   <Jumbotron :slogan="store.vaPage.slogan" />
 
-  <PageMain msg="THIS IS THE MAIN" />
+  <PageMain />
 
   <PageFooter :slogan="store.vaPage.slogan" />
 </template>
