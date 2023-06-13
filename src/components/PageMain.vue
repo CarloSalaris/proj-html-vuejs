@@ -10,6 +10,9 @@ export default {
 <template>
     <main>
         {{ msg }}
+        <section>'Services' section</section>
+        <section>'Learn-more' section</section>
+        <section>'brands' section</section>
     </main>
 </template>
 

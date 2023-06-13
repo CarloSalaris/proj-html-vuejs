@@ -16,7 +16,7 @@ export default {
 
         <!-- RIGHT BLOCK -->
         <!-- Link telephone number -->
-        <!-- BUTTON 1 -->
+        <!-- BUTTON (header: 1, footer: 3) -->
     </div>
 </template>
 
