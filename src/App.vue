@@ -25,11 +25,11 @@ export default {
 <template>
   <PageHeader />
 
-  <Jumbotron msg="THIS IS THE JUMBOTRON" />
+  <Jumbotron :slogan="store.vaPage.slogan" />
 
   <PageMain msg="THIS IS THE MAIN" />
 
-  <PageFooter msg="THIS IS THE FOOTER" />
+  <PageFooter :slogan="store.vaPage.slogan" />
 </template>
 
 <style lang="scss">

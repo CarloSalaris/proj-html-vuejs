@@ -8,6 +8,9 @@ export default {
     components: {
         NavContainer,
     },
+    props: {
+        slogan: String
+    },
     data() {
         return {
             store,
@@ -19,16 +22,22 @@ export default {
 <template>
     <footer class="bg_blue">
         <div class="container_centered">
-            <NavContainer btnColor="btn_3" :menuElements="store.navMenu.elements" />
+            <NavContainer btnColor="btn_3" :menuElements="store.vaPage.navElements" />
 
             <!-- LEFT BLOCK -->
 
-            <div>
+            <div class="block">
                 <!-- TITLE slogan -->
-                <h4>SLOGAN</h4>
+                <h4>{{ slogan }}</h4>
                 <!-- BUTTON 1 -->
                 <button class="btn_1">What is a VA exactly?</button>
                 <!-- Copyright -->
+                <div class="copyright">
+                    &copy; Copyright 2012-2020
+                    | Avada Theme by <a href="#">ThemeFusion</a>
+                    | All Rights Reserved
+                    | Powered by <a href="#">WordPress</a>
+                </div>
             </div>
         </div>
     </footer>
@@ -40,5 +49,9 @@ footer {
     background-image: url("../assets/images/bg/footer-bg-1.svg");
     background-size: cover;
     background-position: center;
+
+    .block {
+        width: 50%;
+    }
 }
 </style>

@@ -1,6 +1,9 @@
 <script>
 export default {
     name: 'Jumbotron',
+    props: {
+        slogan: String,
+    }
 }
 </script>
 
@@ -11,7 +14,7 @@ export default {
             <div class="block">
                 <!-- TITLE slogan -->
                 <h1>
-                    Independent professional who works remotely to help with your business.
+                    {{ slogan }}
                 </h1>
                 <!-- description paragraph -->
                 <p>
@@ -27,7 +30,7 @@ export default {
             <!-- RIGHT BLOCK -->
             <div class="pic_container">
                 <!-- IMAGE - Bottom out of background -->
-                <img src="../assets/images/pics/info-5-600x666.jpg" alt="">
+                <img src="../assets/images/pics/info-5-800x887.jpg" alt="">
 
 
             </div>
@@ -39,21 +42,22 @@ export default {
 @use '../styles/partials/variables' as *;
 
 .jumbo {
-    height: 700px;
+    height: 680px;
     background-image: url("../assets/images/bg/home-bg-3.svg");
-    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .container_centered {
     display: flex;
     width: 85%;
+    padding: 0 70px;
 }
 
 .block {
-    flex-basis: 55%;
-    padding: 30px;
-    margin-right: 60px;
+    flex-basis: 66%;
+    padding: 50px 10px;
+    margin-right: 90px;
     text-align: center;
 
     p {
@@ -63,9 +67,9 @@ export default {
 
 .pic_container {
 
+
     img {
         border-radius: 10px;
-
     }
 }
 </style>

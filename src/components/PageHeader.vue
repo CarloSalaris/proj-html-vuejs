@@ -21,7 +21,7 @@ export default {
 <template>
     <header class="bg_blue">
 
-        <NavContainer btnColor="btn_1" msg="NavContainer" :menuElements="store.navMenu.elements" />
+        <NavContainer btnColor="btn_1" msg="NavContainer" :menuElements="store.vaPage.navElements" />
 
     </header>
 </template>
@@ -33,7 +33,6 @@ header {
     min-height: 185px;
     padding: 25px 80px 0;
     background-image: url("../assets/images/bg/header-bg.svg");
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
 }

@@ -1,8 +1,8 @@
 import { reactive } from "vue";
 
 export const store = reactive({
-    navMenu: {
-        elements: [
+    vaPage: {
+        navElements: [
             {
                 name: "Home",
                 active: true
@@ -20,6 +20,7 @@ export const store = reactive({
                 name: "Contact",
                 active: false
             },
-        ]
+        ],
+        slogan: "Independent professional who works remotely to help with your business.",
     }
 });
