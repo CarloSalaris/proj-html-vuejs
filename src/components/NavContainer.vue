@@ -3,6 +3,7 @@ export default {
     name: 'NavContainer',
     props: {
         menuElements: Array,
+        btnColor: String,
     },
 }
 </script>
@@ -39,7 +40,7 @@ export default {
                 </a>
             </div>
             <!-- BUTTON (header: 1, footer: 3) -->
-            <button>
+            <button :class="btnColor">
                 Get a free consultation
             </button>
         </div>

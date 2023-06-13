@@ -21,12 +21,14 @@ export default {
 <template>
     <header class="bg_blue">
 
-        <NavContainer msg="NavContainer" :menuElements="store.navMenu.elements" />
+        <NavContainer btnColor="btn_1" msg="NavContainer" :menuElements="store.navMenu.elements" />
 
     </header>
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partials/variables';
+
 header {
     min-height: 185px;
     padding: 25px 80px 0;

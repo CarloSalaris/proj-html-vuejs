@@ -31,17 +31,6 @@ ul {
     list-style-type: none;
 }
 
-button {
-    font-weight: 500;
-    font-size: .7em;
-    padding: 15px 35px;
-    background-color: #ffffff;
-    color: $darkBlue;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
 .bg_blue {
     background-color: $blue;
     color: #ffffff;
@@ -55,4 +44,45 @@ button {
     width: 75%;
     margin: 0 auto;
     padding: 50px 20px;
+}
+
+//BUTTONS
+
+button {
+    font-weight: 500;
+    font-size: .7em;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn_1 {
+    background-color: #ffffff;
+    color: $darkBlue;
+
+    &:hover {
+        background-color: $darkBlue;
+        color: #ffffff;
+    }
+}
+
+.btn_2 {
+    background-color: $orange;
+    color: #ffffff;
+
+    &:hover {
+        background-color: $darkBlue;
+        color: #ffffff;
+    }
+}
+
+.btn_3 {
+    background-color: $darkBlue;
+    color: #ffffff;
+
+    &:hover {
+        background-color: #ffffff;
+        color: $darkBlue;
+    }
 }

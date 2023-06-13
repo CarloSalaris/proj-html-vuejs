@@ -19,7 +19,7 @@ export default {
                     <br>Nam maxime unde cupiditate praesentium.
                 </p>
                 <!-- BUTTON 1 -->
-                <button>
+                <button class="btn_1">
                     What is a VA exactly?
                 </button>
             </div>

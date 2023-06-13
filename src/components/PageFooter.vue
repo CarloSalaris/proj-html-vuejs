@@ -19,7 +19,7 @@ export default {
 <template>
     <footer class="bg_blue">
         <div class="container_centered">
-            <NavContainer msg="NavContainer" :menuElements="store.navMenu.elements" />
+            <NavContainer btnColor="btn_3" :menuElements="store.navMenu.elements" />
             <!-- LEFT BLOCK -->
             <!-- TITLE slogan -->
             <!-- BUTTON 1 -->
