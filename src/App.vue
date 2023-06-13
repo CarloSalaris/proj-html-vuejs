@@ -1,5 +1,6 @@
 <script>
 import PageHeader from './components/PageHeader.vue'
+import Jumbotron from './components/Jumbotron.vue'
 import PageMain from './components/PageMain.vue'
 import PageFooter from './components/PageFooter.vue'
 
@@ -7,6 +8,7 @@ import PageFooter from './components/PageFooter.vue'
 export default {
   components: {
     PageHeader,
+    Jumbotron,
     PageMain,
     PageFooter,
   }
@@ -16,15 +18,7 @@ export default {
 <template>
   <PageHeader msg="THIS IS THE HEADER" />
 
-  <!-- JUMBOTRON -->
-  <!-- LEFT BLOCK -->
-  <!-- TITLE slogan -->
-  <!-- description paragraph -->
-  <!-- BUTTON 1 -->
-
-  <!-- RIGHT BLOCK -->
-  <!-- IMAGE - Bottom out of background -->
-
+  <Jumbotron msg="THIS IS THE JUMBOTRON" />
 
   <PageMain msg="THIS IS THE MAIN" />
 
