@@ -1,6 +1,8 @@
 @use './partials/variables' as *;
 
-
+/***************
+    FORMAT
+***************/
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +14,10 @@ body {
     font-size: 24px;
     color: $darkBlue;
 }
+
+/***************
+    ELEMENTS
+***************/
 
 h1 {
     font-size: 2.5em;
@@ -31,6 +37,16 @@ ul {
     list-style-type: none;
 }
 
+/***************
+    UTILITIES
+***************/
+
+.container_centered {
+    width: 75%;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
 .bg_blue {
     background-color: $blue;
     color: #ffffff;
@@ -40,11 +56,6 @@ ul {
     border-bottom: solid 1px #ffffff;
 }
 
-.container_centered {
-    width: 75%;
-    margin: 0 auto;
-    padding: 50px 20px;
-}
 
 //BUTTONS
 
