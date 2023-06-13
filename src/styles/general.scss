@@ -1,3 +1,6 @@
+@use './partials/variables' as *;
+
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +9,7 @@
 
 body {
     font-family: 'Jost', sans-serif;
+    color: $darkBlue;
 }
 
 img {
@@ -19,4 +23,9 @@ a {
 
 ul {
     list-style-type: none;
+}
+
+.bg_blue {
+    background-color: $blue;
+    color: #ffffff;
 }

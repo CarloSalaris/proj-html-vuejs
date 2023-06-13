@@ -2,17 +2,30 @@
 export default {
     name: 'NavContainer',
     props: {
-        msg: String,
+        menuElements: Array,
     },
 }
 </script>
 
 <template>
-    <div class="navContainer"> {{ msg }}
-        <!-- NAV MENU CONTAINER -->
+    <div class="navContainer bg_blue">
+
         <!-- LEFT BLOCK -->
-        <!-- LOGO -->
-        <!-- NAV MENU (ul) -->
+        <div>
+            <!-- LOGO -->
+            <div class="logo">
+                <img src="" alt="">
+            </div>
+            <!-- NAV MENU (ul) -->
+            <nav>
+                <ul>
+                    <li v-for="(element, idx) in menuElements" :key="idx">
+                        <a href="#">{{ element.name }}</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
 
         <!-- RIGHT BLOCK -->
         <!-- Link telephone number -->
@@ -20,4 +33,18 @@ export default {
     </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
+
+.navContainer {
+    height: 100px;
+    display: flex;
+    gap: 40px;
+
+    ul {
+        display: flex;
+        gap: 10px;
+    }
+
+}
+</style>

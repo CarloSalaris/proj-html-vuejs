@@ -1,4 +1,6 @@
 <script>
+import { store } from "./store.js";
+
 import PageHeader from './components/PageHeader.vue'
 import Jumbotron from './components/Jumbotron.vue'
 import PageMain from './components/PageMain.vue'
@@ -11,12 +13,17 @@ export default {
     Jumbotron,
     PageMain,
     PageFooter,
-  }
+  },
+  data() {
+    return {
+      store,
+    }
+  },
 }
 </script>
 
 <template>
-  <PageHeader msg="THIS IS THE HEADER" />
+  <PageHeader />
 
   <Jumbotron msg="THIS IS THE JUMBOTRON" />
 
@@ -27,4 +34,5 @@ export default {
 
 <style lang="scss">
 @use './styles/general.scss';
+@use './styles/partials/variables';
 </style>

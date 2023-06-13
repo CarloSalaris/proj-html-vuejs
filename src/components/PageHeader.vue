@@ -1,4 +1,5 @@
 <script>
+import { store } from "../store.js";
 import NavContainer from './NavContainer.vue'
 
 export default {
@@ -6,16 +7,21 @@ export default {
     components: {
         NavContainer,
     },
+    data() {
+        return {
+            store,
+        }
+    },
     props: {
-        msg: String,
+        navMenu: Array,
     }
 }
 </script>
 
 <template>
-    <header> {{ msg }}
+    <header>
 
-        <NavContainer msg="NavContainer" />
+        <NavContainer msg="NavContainer" :menuElements="store.navMenu.elements" />
 
     </header>
 </template>

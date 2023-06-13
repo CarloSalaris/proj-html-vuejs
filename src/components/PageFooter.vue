@@ -1,10 +1,17 @@
 <script>
+import { store } from "../store.js";
+
 import NavContainer from './NavContainer.vue'
 
 export default {
     name: 'PageFooter',
     components: {
         NavContainer,
+    },
+    data() {
+        return {
+            store,
+        }
     },
     props: {
         msg: String,
@@ -14,7 +21,7 @@ export default {
 
 <template>
     {{ msg }}
-    <NavContainer msg="NavContainer" />
+    <NavContainer msg="NavContainer" :menuElements="store.navMenu.elements" />
 
     <!-- LEFT BLOCK -->
     <!-- TITLE slogan -->
