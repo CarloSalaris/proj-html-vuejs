@@ -18,11 +18,13 @@ export default {
 
 <template>
     <footer class="bg_blue">
-        <NavContainer msg="NavContainer" :menuElements="store.navMenu.elements" />
-        <!-- LEFT BLOCK -->
-        <!-- TITLE slogan -->
-        <!-- BUTTON 1 -->
-        <!-- Copyright -->
+        <div class="container_centered">
+            <NavContainer msg="NavContainer" :menuElements="store.navMenu.elements" />
+            <!-- LEFT BLOCK -->
+            <!-- TITLE slogan -->
+            <!-- BUTTON 1 -->
+            <!-- Copyright -->
+        </div>
     </footer>
 </template>
 
