@@ -1,6 +1,11 @@
 <script>
+import NavContainer from './NavContainer.vue'
+
 export default {
     name: 'PageHeader',
+    components: {
+        NavContainer,
+    },
     props: {
         msg: String,
     }
@@ -10,23 +15,7 @@ export default {
 <template>
     <header> {{ msg }}
 
-        <!-- NAV MENU CONTAINER -->
-        <!-- LEFT BLOCK -->
-        <!-- LOGO -->
-        <!-- NAV MENU (ul) -->
-
-        <!-- RIGHT BLOCK -->
-        <!-- Link telephone number -->
-        <!-- BUTTON 1 -->
-
-        <!-- JUMBOTRON -->
-        <!-- LEFT BLOCK -->
-        <!-- TITLE slogan -->
-        <!-- description paragraph -->
-        <!-- BUTTON 1 -->
-
-        <!-- RIGHT BLOCK -->
-        <!-- IMAGE - Bottom out of background -->
+        <NavContainer msg="NavContainer" />
 
     </header>
 </template>

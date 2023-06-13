@@ -16,6 +16,16 @@ export default {
 <template>
   <PageHeader msg="THIS IS THE HEADER" />
 
+  <!-- JUMBOTRON -->
+  <!-- LEFT BLOCK -->
+  <!-- TITLE slogan -->
+  <!-- description paragraph -->
+  <!-- BUTTON 1 -->
+
+  <!-- RIGHT BLOCK -->
+  <!-- IMAGE - Bottom out of background -->
+
+
   <PageMain msg="THIS IS THE MAIN" />
 
   <PageFooter msg="THIS IS THE FOOTER" />
