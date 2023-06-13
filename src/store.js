@@ -11,7 +11,8 @@ export const store = reactive({
                 active: false
             }, {
                 name: "Services",
-                active: false
+                active: false,
+                dropdown: true
             }, {
                 name: "Journal",
                 active: false

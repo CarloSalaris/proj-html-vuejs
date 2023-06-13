@@ -9,6 +9,7 @@
 
 body {
     font-family: 'Jost', sans-serif;
+    font-size: 22px;
     color: $darkBlue;
 }
 
@@ -25,7 +26,22 @@ ul {
     list-style-type: none;
 }
 
+button {
+    font-weight: 500;
+    font-size: .7em;
+    padding: 15px 35px;
+    background-color: #ffffff;
+    color: $darkBlue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .bg_blue {
     background-color: $blue;
     color: #ffffff;
+}
+
+.active {
+    border-bottom: solid 1px #ffffff;
 }

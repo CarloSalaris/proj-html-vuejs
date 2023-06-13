@@ -8,28 +8,41 @@ export default {
 </script>
 
 <template>
-    <div class="navContainer bg_blue">
+    <div class="navContainer">
 
         <!-- LEFT BLOCK -->
-        <div>
+        <div class="block">
             <!-- LOGO -->
             <div class="logo">
-                <img src="" alt="">
+                <img src="../assets/images/icons/logo.png" alt="logo">
             </div>
             <!-- NAV MENU (ul) -->
-            <nav>
-                <ul>
-                    <li v-for="(element, idx) in menuElements" :key="idx">
-                        <a href="#">{{ element.name }}</a>
-                    </li>
-                </ul>
-            </nav>
+            <ul>
+                <li v-for="(element, idx) in menuElements" :class="element.active ? 'active' : ''" :key="idx">
+                    <a href="#">
+                        {{ element.name }}
+                        <i v-if="element.dropdown" class="fa-solid fa-angle-down"></i>
+                    </a>
 
+                </li>
+            </ul>
         </div>
 
         <!-- RIGHT BLOCK -->
-        <!-- Link telephone number -->
-        <!-- BUTTON (header: 1, footer: 3) -->
+
+        <div class="block">
+            <!-- Link telephone number -->
+            <div class="phoneLInk">
+                <a href="#">
+                    <i class="fa-solid fa-headphones"></i>
+                    1.800.123.4567
+                </a>
+            </div>
+            <!-- BUTTON (header: 1, footer: 3) -->
+            <button>
+                Get a free consultation
+            </button>
+        </div>
     </div>
 </template>
 
@@ -37,13 +50,29 @@ export default {
 @use '../styles/partials/variables' as *;
 
 .navContainer {
-    height: 100px;
+    padding: 30px 0;
     display: flex;
-    gap: 40px;
+    justify-content: space-between;
+
+    .block {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+    }
 
     ul {
+        margin-left: 60px;
         display: flex;
-        gap: 10px;
+        gap: 25px;
+
+        li {
+            padding: 10px 0;
+
+            i {
+                margin-left: 5px;
+                font-size: .8em;
+            }
+        }
     }
 
 }

@@ -12,21 +12,18 @@ export default {
         return {
             store,
         }
-    },
-    props: {
-        msg: String,
-    },
+    }
 }
 </script>
 
 <template>
-    {{ msg }}
-    <NavContainer msg="NavContainer" :menuElements="store.navMenu.elements" />
-
-    <!-- LEFT BLOCK -->
-    <!-- TITLE slogan -->
-    <!-- BUTTON 1 -->
-    <!-- Copyright -->
+    <footer class="bg_blue">
+        <NavContainer msg="NavContainer" :menuElements="store.navMenu.elements" />
+        <!-- LEFT BLOCK -->
+        <!-- TITLE slogan -->
+        <!-- BUTTON 1 -->
+        <!-- Copyright -->
+    </footer>
 </template>
 
 <style lang="scss" scoped></style>
