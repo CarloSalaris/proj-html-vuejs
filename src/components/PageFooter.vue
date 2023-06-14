@@ -14,6 +14,7 @@ export default {
     data() {
         return {
             store,
+            chatVisible: true,
         }
     }
 }
@@ -50,16 +51,16 @@ export default {
 
         <!-- chat -->
         <!-- chat button -->
-        <div class="chatButton">
+        <div class="chatButton" @click="chatVisible = !chatVisible">
             <i class="fa-solid fa-message"></i>
         </div>
         <!-- chat window -->
-        <div class="chatWindow">
+        <div v-if="chatVisible === true" class="chatWindow">
             <p>
                 This is a free HubSpot live chat.
                 You can create your own chat flows and engage your customers with Avada & HubSpot!
             </p>
-            <span class="closeX">
+            <span class="closeX" @click="chatVisible = !chatVisible">
                 <i class="fa-solid fa-xmark"></i>
             </span>
             <span class="logo_small">
