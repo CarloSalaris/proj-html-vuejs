@@ -16,22 +16,22 @@ export default {
                     <div class="servicesCards">
                         <!-- card -->
                         <div class="card">
-                            <h2>Answering phone calls</h2>
+                            <h3>Answering phone calls</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis odio</p>
                         </div>
                         <!-- card -->
                         <div class="card">
-                            <h2>Basic data entry</h2>
+                            <h3>Basic data entry</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis odio</p>
                         </div>
                         <!-- card -->
                         <div class="card">
-                            <h2>Organizing calendar</h2>
+                            <h3>Organizing calendar</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis odio</p>
                         </div>
                         <!-- card -->
                         <div class="card">
-                            <h2>Booking travels</h2>
+                            <h3>Booking travels</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis odio</p>
                         </div>
                     </div>
