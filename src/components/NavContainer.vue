@@ -66,7 +66,6 @@ export default {
     justify-content: space-between;
     font-weight: 600;
 
-
     .block {
         display: flex;
         gap: 50px;

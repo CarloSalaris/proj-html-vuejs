@@ -15,17 +15,7 @@ export default {
             <div class="block">
                 <!-- Fixed title underline -->
                 <span class="titleUnderline">
-                    <svg width="417" height="382" viewBox="0 0 417 382" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0)">
-                            <path d="M170 -0.364258C246.399 34.95 330.924 55.6733 420 58.2311" stroke="#F86635"
-                                stroke-opacity="1" stroke-width="3.24684" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0">
-                                <rect width="417" height="382" fill="white" />
-                            </clipPath>
-                        </defs>
-                    </svg>
+                    <img src="../assets/images/line.svg" alt="">
                 </span>
                 <!-- TITLE slogan -->
                 <h1>
@@ -90,6 +80,7 @@ export default {
     padding: 50px 15px;
     margin-right: 85px;
     text-align: center;
+    overflow: hidden;
 
     p {
         margin-bottom: 50px;
@@ -103,11 +94,11 @@ export default {
 
 //FIXED ELEMENTS
 .titleUnderline {
+    width: 300px;
     position: absolute;
-    top: -260px;
-    right: -80px;
-    rotate: 165deg;
-
+    top: 45px;
+    right: 20px;
+    rotate: 5deg;
 }
 
 .sideSquares {
