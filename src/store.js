@@ -5,20 +5,24 @@ export const store = reactive({
         navElements: [
             {
                 name: "Home",
-                active: true
+                active: true,
+                dropdown: false,
             }, {
                 name: "About",
-                active: false
+                active: false,
+                dropdown: false,
             }, {
                 name: "Services",
                 active: false,
-                dropdown: true
+                dropdown: true,
             }, {
                 name: "Journal",
-                active: false
+                active: false,
+                dropdown: false,
             }, {
                 name: "Contact",
-                active: false
+                active: false,
+                dropdown: false,
             },
         ],
         slogan: "Independent professional who works remotely to help with your business.",

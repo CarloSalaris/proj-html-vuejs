@@ -5,6 +5,17 @@ export default {
         menuElements: Array,
         btnColor: String,
     },
+    data() {
+        return {
+            activePosition: 0,
+        }
+    },
+    methods: {
+        menuSelect(value) {
+            this.activePosition = value;
+            this.menuElements[value].active = true;
+        }
+    }
 }
 </script>
 
@@ -19,7 +30,8 @@ export default {
             </div>
             <!-- NAV MENU (ul) -->
             <ul>
-                <li v-for="(element, idx) in menuElements" :class="element.active ? 'active' : ''" :key="idx">
+                <li v-for="(element, idx) in menuElements" :class="activePosition === idx ? 'active' : ''" :key="idx"
+                    @click.prevent="menuSelect(idx)">
                     <a href="#">
                         {{ element.name }}
                         <i v-if="element.dropdown" class="fa-solid fa-angle-down"></i>
