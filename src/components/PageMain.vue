@@ -10,6 +10,10 @@ export default {
     <main>
         <!-- SERVICES SECTION -->
         <section>
+
+            <!-- FIXED DIV FOR BACKGROUND -->
+            <div id="orangeFixed"></div>
+
             <div class="container_centered">
 
                 <!-- GRID -->
@@ -196,6 +200,21 @@ export default {
 @use '../styles/partials/variables' as *;
 
 //SERVICES SECTION
+
+section {
+    position: relative;
+}
+
+#orangeFixed {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+    width: 200px;
+    height: 200px;
+    background-color: $orange;
+    border-radius: 50%;
+}
 
 //GRID
 .services {
