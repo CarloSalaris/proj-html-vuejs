@@ -8,6 +8,7 @@ export default {
 
 <template>
     <main>
+        <!-- SERVICES SECTION -->
         <section>
             <div class="container_centered">
 
@@ -57,10 +58,17 @@ export default {
                     </div>
 
                 </div>
-
             </div>
         </section>
-        <section id="learnMore" class="bg_blue">'Learn-more' section</section>
+
+        <!-- LEARN-MORE SECTION -->
+        <section id="learnMore" class="bg_blue">
+            <div class="text_button">
+                <p>Donec est tristique eu massa pellentesque.</p>
+                <h1>Highly skilled, independent professional freelancer.</h1>
+                <button class="btn_2">What is a VA exactly?</button>
+            </div>
+        </section>
         <section>'brands' section</section>
     </main>
 </template>
@@ -113,5 +121,17 @@ section {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom, top right;
+    padding: 150px;
+
+    .text_button {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+
+        &>* {
+            margin-bottom: 40px;
+        }
+
+    }
 }
 </style>
