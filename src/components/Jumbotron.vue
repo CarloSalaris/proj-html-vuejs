@@ -64,12 +64,4 @@ export default {
         margin-bottom: 50px;
     }
 }
-
-.pic_container {
-
-
-    img {
-        border-radius: 10px;
-    }
-}
 </style>
