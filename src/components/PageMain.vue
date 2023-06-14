@@ -203,6 +203,7 @@ export default {
 
 section {
     position: relative;
+    overflow-x: hidden;
 }
 
 #orangeFixed {
