@@ -40,10 +40,17 @@ export default {
                 </div>
             </div>
         </div>
+        <!-- FIXED ELEMENTS -->
+        <!-- back-home arrow -->
+        <span class="backHome">
+            <a href=""><i class="fa-solid fa-chevron-up"></i></a>
+        </span>
     </footer>
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
+
 footer {
     height: 550px;
     background-image: url("../assets/images/bg/footer-bg-1.svg");
@@ -53,5 +60,18 @@ footer {
     .block {
         width: 55%;
     }
+}
+
+.backHome {
+    position: fixed;
+    bottom: 0;
+    left: 100px;
+    padding: 5px 15px;
+    background-color: $iconBgGray;
+    font-size: .8rem;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+
 }
 </style>
