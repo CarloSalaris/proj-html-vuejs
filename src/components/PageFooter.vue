@@ -65,7 +65,7 @@ footer {
 .backHome {
     position: fixed;
     bottom: 0;
-    left: 100px;
+    left: 60px;
     padding: 5px 15px;
     background-color: $iconBgGray;
     font-size: .8rem;
