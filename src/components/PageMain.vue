@@ -17,23 +17,23 @@ export default {
                     <div class="services"> Available services</div>
                     <div class="flexContainer">
                         <!-- card -->
-                        <div class="card">
-                            <h3>Answering phone calls</h3>
+                        <div class="serviceCard">
+                            <h4>Answering phone calls</h4>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis odio</p>
                         </div>
                         <!-- card -->
-                        <div class="card">
-                            <h3>Basic data entry</h3>
+                        <div class="serviceCard">
+                            <h4>Basic data entry</h4>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis odio</p>
                         </div>
                         <!-- card -->
-                        <div class="card">
-                            <h3>Organizing calendar</h3>
+                        <div class="serviceCard">
+                            <h4>Organizing calendar</h4>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis odio</p>
                         </div>
                         <!-- card -->
-                        <div class="card">
-                            <h3>Booking travels</h3>
+                        <div class="serviceCard">
+                            <h4>Booking travels</h4>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis odio</p>
                         </div>
                     </div>
@@ -43,7 +43,7 @@ export default {
                 <div class="flexContainer">
                     <!-- image -->
                     <div class="pic_container">
-                        <img src="../assets/images/pics/info-5-2x-800x864.png" alt="Section picture">
+                        <img src="../assets/images/pics/info-5-2x.png" alt="Section picture">
                     </div>
                     <!-- text block -->
                     <div class="side_text_block">
@@ -62,7 +62,7 @@ export default {
         </section>
 
         <!-- LEARN-MORE SECTION -->
-        <section id="learnMore" class="bg_blue">
+        <section id="learnMoreSection" class="bg_blue">
             <div class="container_centered">
                 <!-- Text and button -->
                 <div class="text_button">
@@ -116,7 +116,79 @@ export default {
                 </div>
             </div>
         </section>
-        <section>'brands' section</section>
+
+        <!-- BRANDS SECTION -->
+        <section id="brandSection">
+            <div class="container_centered">
+                <!-- List of brands -->
+                <div class="brands">
+                    <p>Trusted by these amazing brands</p>
+                    <div class="flexContainer">
+                        <a href=""><img src="../assets/images/brands/brand-1.jpg" alt="brand"></a>
+                        <a href=""><img src="../assets/images/brands/brand-7.jpg" alt="brand"></a>
+                        <a href=""><img src="../assets/images/brands/brand-3.jpg" alt="brand"></a>
+                        <a href=""><img src="../assets/images/brands/brand-4.jpg" alt="brand"></a>
+                        <a href=""><img src="../assets/images/brands/brand-5.jpg" alt="brand"></a>
+                    </div>
+                </div>
+
+                <!-- IMAGE AND SIDE-TEXT BLOCK-->
+                <div class="flexContainer flexReverse">
+                    <!-- image -->
+                    <div class="pic_container">
+                        <img src="../assets/images/pics/info-8-2x-600x610.png" alt="Section picture">
+                    </div>
+                    <!-- text block -->
+                    <div class="side_text_block">
+                        <img src="../assets/images/icons/icon-2-2x-200x127.png" alt="">
+                        <h2>Professional who works to help with your business.</h2>
+                        <p>
+                            Deleniti explicabo alias animi sequi officia, optio dolorem quibusdam! Excepturi omnis
+                            dolores
+                        </p>
+                        <button class="btn_2">
+                            What is a VA exactly?
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Card container -->
+                <div class="flexContainer">
+                    <!-- CARD -->
+                    <div class="card">
+                        <!-- Left side -->
+                        <div>
+                            <h3>1.</h3>
+                        </div>
+                        <!-- Right side -->
+                        <div>
+                            <h5>Learn to delegate</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio non senectus amet sit amet
+                                consectetur adipisicing elit. Optio non senectus amet consectetur.</p>
+                            <a href="#">Learn more</a>
+                        </div>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="card">
+                        <!-- Left side -->
+                        <div>
+                            <h3>2.</h3>
+                        </div>
+                        <!-- Right side -->
+                        <div>
+                            <h5>Reduce labor cost</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio non senectus amet sit amet
+                                consectetur adipisicing elit. Optio non senectus amet consectetur.</p>
+                            <a href="#">Learn more</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
     </main>
 </template>
 
@@ -139,10 +211,14 @@ section {
 .servicesGrid {
     margin-bottom: 100px;
 
-    .card {
+    .serviceCard {
         width: 25%;
         padding: 60px;
         border-right: solid 2px $lightGray;
+
+        p {
+            font-size: 1.3rem;
+        }
 
         &:last-child {
             border-right: none;
@@ -151,10 +227,15 @@ section {
 }
 
 //IMAGE + SIDE-TEXT
+
+.pic_container {
+    width: 50%;
+}
+
 .side_text_block {
-    flex-basis: 60%;
+    flex-basis: 50%;
     text-align: center;
-    padding: 50px;
+    padding: 50px 30px;
     margin: 0 20px;
 
     &>* {
@@ -163,7 +244,7 @@ section {
 }
 
 //  "LEARN MORE" SECTION
-#learnMore {
+#learnMoreSection {
     background-image: url("../assets/images/bg/info-bg-3.svg"), url("../assets/images/bg/info-bg-2.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -180,31 +261,68 @@ section {
             margin-bottom: 40px;
         }
     }
+}
 
-    .flexContainer {
+.flexContainer {
+    gap: 50px;
+
+    // CARDS
+    .card {
+        background-color: $darkBlue;
+        color: #ffffff;
+        padding: 50px;
+        border-radius: 5px;
+        display: flex;
         gap: 50px;
 
-        // CARDS
-        .card {
-            background-color: $darkBlue;
-            padding: 50px;
-            border-radius: 5px;
-            display: flex;
-            gap: 50px;
+        h3 {
+            text-align: center;
+        }
 
-            & * {
-                margin-bottom: 30px;
-            }
+        p {
+            font-size: 1.3rem;
+            padding-top: 10px;
+            margin-bottom: 30px;
+        }
 
-            p {
-                font-size: 1.3rem;
-                padding-top: 10px;
-            }
+        a {
+            color: $orange;
+            text-decoration: underline;
+        }
+    }
+}
 
-            a {
-                color: $orange;
-                text-decoration: underline;
-            }
+// BRANDS SECTION
+#brandSection {
+    padding: 100px 0;
+
+    .brands {
+        text-align: center;
+        margin-bottom: 100px;
+
+        p {
+            color: $orange;
+        }
+    }
+
+    .flexContainer.flexReverse {
+        margin-bottom: 100px;
+    }
+
+    .card {
+        padding: 80px 50px;
+        background-color: $blue;
+
+        &:first-child {
+            background-image: url("../assets/images/bg/box-bg-1.svg");
+            background-position: bottom;
+            background-size: cover;
+        }
+
+        &:last-child {
+            background-image: url("../assets/images/bg/box-bg-2.svg");
+            background-position: top;
+            background-size: cover;
         }
     }
 }
