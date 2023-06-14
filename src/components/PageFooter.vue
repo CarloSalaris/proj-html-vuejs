@@ -40,11 +40,21 @@ export default {
                 </div>
             </div>
         </div>
+
         <!-- FIXED ELEMENTS -->
+
         <!-- back-home arrow -->
         <span class="backHome">
             <a href=""><i class="fa-solid fa-chevron-up"></i></a>
         </span>
+
+        <!-- chat -->
+        <!-- chat button -->
+        <div class="chatButton">
+            <i class="fa-solid fa-message"></i>
+        </div>
+
+
     </footer>
 </template>
 
@@ -71,7 +81,21 @@ footer {
     font-size: .8rem;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+}
 
-
+.chatButton {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 15px;
+    bottom: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $orange;
+    color: #ffffff;
+    font-size: 1.4rem;
+    cursor: pointer;
 }
 </style>
