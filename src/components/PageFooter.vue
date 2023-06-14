@@ -28,7 +28,7 @@ export default {
 
             <div class="block">
                 <!-- TITLE slogan -->
-                <h4>{{ slogan }}</h4>
+                <h3>{{ slogan }}</h3>
                 <!-- BUTTON 1 -->
                 <button class="btn_1">What is a VA exactly?</button>
                 <!-- Copyright -->
