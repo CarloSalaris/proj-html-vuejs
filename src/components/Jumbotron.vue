@@ -13,6 +13,20 @@ export default {
         <!-- LEFT BLOCK -->
         <div class="container_centered">
             <div class="block">
+                <!-- Fixed title underline -->
+                <span class="titleUnderline">
+                    <svg width="417" height="382" viewBox="0 0 417 382" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                            <path d="M170 -0.364258C246.399 34.95 330.924 55.6733 420 58.2311" stroke="#F86635"
+                                stroke-opacity="1" stroke-width="3.24684" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0">
+                                <rect width="417" height="382" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </span>
                 <!-- TITLE slogan -->
                 <h1>
                     {{ slogan }}
@@ -35,7 +49,8 @@ export default {
             </div>
         </div>
 
-        <!-- Fixed elements -->
+        <!-- FIXED ELEMENTS -->
+        <!-- Side squares -->
         <div class="sideSquares">
             <!-- square -->
             <div class="sideSquare">
@@ -70,6 +85,7 @@ export default {
 }
 
 .block {
+    position: relative;
     flex-basis: 55%;
     padding: 50px 15px;
     margin-right: 85px;
@@ -83,6 +99,15 @@ export default {
 .pic_container {
     width: 45%;
     max-height: 570px;
+}
+
+//FIXED ELEMENTS
+.titleUnderline {
+    position: absolute;
+    top: -260px;
+    right: -80px;
+    rotate: 165deg;
+
 }
 
 .sideSquares {
