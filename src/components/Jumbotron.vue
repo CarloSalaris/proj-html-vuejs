@@ -89,6 +89,7 @@ export default {
     position: fixed;
     top: 110px;
     right: 10px;
+    z-index: 1000;
 
     .sideSquare {
         display: flex;
