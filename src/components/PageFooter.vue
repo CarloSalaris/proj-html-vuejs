@@ -53,6 +53,19 @@ export default {
         <div class="chatButton">
             <i class="fa-solid fa-message"></i>
         </div>
+        <!-- chat window -->
+        <div class="chatWindow">
+            <p>
+                This is a free HubSpot live chat.
+                You can create your own chat flows and engage your customers with Avada & HubSpot!
+            </p>
+            <span class="closeX">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <span class="logo_small">
+                <img src="../assets/images/icons/logo.png" alt="">
+            </span>
+        </div>
 
 
     </footer>
@@ -97,5 +110,42 @@ footer {
     color: #ffffff;
     font-size: 1.4rem;
     cursor: pointer;
+}
+
+.chatWindow {
+    position: fixed;
+    width: 200px;
+    right: 15px;
+    bottom: 90px;
+    background-color: #ffffff;
+    color: $iconGray;
+    padding: 25px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(128, 128, 128, 0.534);
+
+    p {
+        font-size: .8rem;
+    }
+
+    .closeX {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        cursor: pointer;
+
+        &:hover {
+            color: lightGray;
+        }
+    }
+
+    .logo_small {
+        width: 40px;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -50%);
+
+    }
+
 }
 </style>
