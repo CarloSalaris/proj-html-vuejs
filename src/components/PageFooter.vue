@@ -14,7 +14,7 @@ export default {
     data() {
         return {
             store,
-            chatVisible: true,
+            chatVisible: false,
         }
     }
 }
