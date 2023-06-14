@@ -45,13 +45,13 @@ export default {
 
 <style lang="scss" scoped>
 footer {
-    height: 655px;
+    height: 550px;
     background-image: url("../assets/images/bg/footer-bg-1.svg");
     background-size: cover;
     background-position: center;
 
     .block {
-        width: 50%;
+        width: 55%;
     }
 }
 </style>

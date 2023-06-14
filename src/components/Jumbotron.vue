@@ -42,7 +42,7 @@ export default {
 @use '../styles/partials/variables' as *;
 
 .jumbo {
-    height: 680px;
+    height: 550px;
     background-image: url("../assets/images/bg/home-bg-3.svg");
     background-size: cover;
     background-position: center;
@@ -51,17 +51,22 @@ export default {
 .container_centered {
     display: flex;
     width: 85%;
-    padding: 0 70px;
+    padding: 0 40px;
 }
 
 .block {
-    flex-basis: 66%;
-    padding: 50px 10px;
-    margin-right: 90px;
+    flex-basis: 55%;
+    padding: 50px 15px;
+    margin-right: 85px;
     text-align: center;
 
     p {
         margin-bottom: 50px;
     }
+}
+
+.pic_container {
+    width: 45%;
+    max-height: 570px;
 }
 </style>

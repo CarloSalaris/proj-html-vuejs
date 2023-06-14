@@ -19,22 +19,22 @@ export default {
                         <!-- card -->
                         <div class="serviceCard">
                             <h4>Answering phone calls</h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis odio</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                         </div>
                         <!-- card -->
                         <div class="serviceCard">
                             <h4>Basic data entry</h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis odio</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                         </div>
                         <!-- card -->
                         <div class="serviceCard">
                             <h4>Organizing calendar</h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis odio</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                         </div>
                         <!-- card -->
                         <div class="serviceCard">
                             <h4>Booking travels</h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis odio</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
                 </div>
@@ -195,10 +195,6 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
 
-section {
-    min-height: 1000px;
-}
-
 //SERVICES SECTION
 
 //GRID
@@ -206,18 +202,23 @@ section {
     color: $orange;
     padding: 25px 0;
     border-bottom: solid 2px $lightGray ;
+    font-weight: 500;
 }
 
 .servicesGrid {
     margin-bottom: 100px;
 
+    .flexContainer {
+        gap: 0;
+    }
+
     .serviceCard {
         width: 25%;
-        padding: 60px;
+        padding: 50px;
         border-right: solid 2px $lightGray;
 
         p {
-            font-size: 1.3rem;
+            font-size: 1.1rem;
         }
 
         &:last-child {
@@ -235,8 +236,16 @@ section {
 .side_text_block {
     flex-basis: 50%;
     text-align: center;
-    padding: 50px 30px;
-    margin: 0 20px;
+    padding: 50px 32px;
+    // margin: 0 10px;
+
+    img {
+        width: 150px;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
 
     &>* {
         margin-bottom: 30px;
@@ -249,7 +258,7 @@ section {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom, top right;
-    padding: 100px 0;
+    padding: 65px 0;
 
     .text_button {
         width: 80%;
@@ -264,23 +273,23 @@ section {
 }
 
 .flexContainer {
-    gap: 50px;
+    gap: 45px;
 
     // CARDS
     .card {
         background-color: $darkBlue;
         color: #ffffff;
-        padding: 50px;
+        padding: 40px 50px;
         border-radius: 5px;
         display: flex;
-        gap: 50px;
+        gap: 35px;
 
         h3 {
             text-align: center;
         }
 
         p {
-            font-size: 1.3rem;
+            font-size: 1rem;
             padding-top: 10px;
             margin-bottom: 30px;
         }
@@ -294,7 +303,7 @@ section {
 
 // BRANDS SECTION
 #brandSection {
-    padding: 100px 0;
+    padding: 60px 0;
 
     .brands {
         text-align: center;
@@ -310,7 +319,7 @@ section {
     }
 
     .card {
-        padding: 80px 50px;
+        padding: 60px 50px;
         background-color: $blue;
 
         &:first-child {

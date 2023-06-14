@@ -30,8 +30,7 @@ export default {
 @use '../styles/partials/variables';
 
 header {
-    min-height: 185px;
-    padding: 25px 80px 0;
+    padding: 0 60px;
     background-image: url("../assets/images/bg/header-bg.svg");
     background-size: cover;
     background-position: bottom;

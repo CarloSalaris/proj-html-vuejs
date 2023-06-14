@@ -33,7 +33,7 @@ export default {
 
         <div class="block">
             <!-- Link telephone number -->
-            <div class="phoneLInk">
+            <div class="phoneLink">
                 <a href="#">
                     <i class="fa-solid fa-headphones"></i>
                     1.800.123.4567
@@ -49,9 +49,11 @@ export default {
 
 <style lang="scss" scoped>
 .navContainer {
-    padding: 30px 0;
+    padding: 40px 0;
     display: flex;
     justify-content: space-between;
+    font-weight: 600;
+
 
     .block {
         display: flex;
@@ -59,8 +61,12 @@ export default {
         align-items: center;
     }
 
+    .logo {
+        width: 55px;
+    }
+
     ul {
-        margin-left: 60px;
+        margin-left: 30px;
         display: flex;
         gap: 25px;
 
@@ -74,5 +80,14 @@ export default {
         }
     }
 
+    .phoneLink {
+        a {
+            font-size: .9rem;
+
+            i {
+                margin-right: 5px;
+            }
+        }
+    }
 }
 </style>
