@@ -13,7 +13,6 @@ export default {
     methods: {
         menuSelect(value) {
             this.activePosition = value;
-            this.menuElements[value].active = true;
         }
     }
 }
