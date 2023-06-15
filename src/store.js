@@ -5,23 +5,18 @@ export const store = reactive({
         navElements: [
             {
                 name: "Home",
-                active: true,
                 dropdown: false,
             }, {
                 name: "About",
-                active: false,
                 dropdown: false,
             }, {
                 name: "Services",
-                active: false,
                 dropdown: true,
             }, {
                 name: "Journal",
-                active: false,
                 dropdown: false,
             }, {
                 name: "Contact",
-                active: false,
                 dropdown: false,
             },
         ],
