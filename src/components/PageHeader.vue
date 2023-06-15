@@ -21,7 +21,7 @@ export default {
 <template>
     <header class="bg_blue">
 
-        <NavContainer btnColor="btn_1" msg="NavContainer" :menuElements="store.vaPage.navElements" />
+        <NavContainer btnColor="btn_1" :menuElements="store.vaPage.navElements" />
 
     </header>
 </template>
