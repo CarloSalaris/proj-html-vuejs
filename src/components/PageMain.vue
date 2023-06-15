@@ -14,6 +14,7 @@ export default {
             <!-- FIXED DIV FOR BACKGROUND -->
             <div id="orangeFixed"></div>
 
+            <!-- CONTENT -->
             <div class="container_centered">
 
                 <!-- GRID -->
@@ -203,7 +204,7 @@ export default {
 
 section {
     position: relative;
-    overflow-x: hidden;
+    overflow-x: hidden; //for orange circle in background
 }
 
 #orangeFixed {
@@ -217,6 +218,7 @@ section {
     border-radius: 50%;
 }
 
+// "SERVICES" SECTION
 //GRID
 .services {
     color: $orange;
@@ -248,7 +250,6 @@ section {
 }
 
 //IMAGE + SIDE-TEXT
-
 .pic_container {
     width: 50%;
 }
@@ -321,7 +322,7 @@ section {
     }
 }
 
-// BRANDS SECTION
+// "BRANDS" SECTION
 #brandSection {
     padding: 60px 0;
 
@@ -342,6 +343,7 @@ section {
         padding: 60px 50px;
         background-color: $blue;
 
+        //immagini background
         &:first-child {
             background-image: url("../assets/images/bg/box-bg-1.svg");
             background-position: bottom;
